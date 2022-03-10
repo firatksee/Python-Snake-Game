@@ -7,7 +7,6 @@ from random import randint
 headDirectx = 0
 headDirecty = 0
 snakeBody = [[5,5],[4,5],[3,5],[2,5],[1,5]]
-nextTail = snakeBody[len(snakeBody) - 1]
 headPos = snakeBody[0]
 snakeSize = len(snakeBody)
 
