@@ -31,9 +31,10 @@ highScore = 0
 
 gameOn = True
 
-
-with open("BasicSnakeGameDB.txt","r") as file:
-	highScore = int(file.readline())
+def readHighScore():
+	global highScore
+	with open("BasicSnakeGameDB.txt","r") as file:
+		highScore = int(file.readline())
 
 
 
@@ -163,5 +164,7 @@ def gamePlay():
 thread_one = threading.Thread(target = controller)
 thread_two = threading.Thread(target = gamePlay)
 
-thread_one.start()
-thread_two.start()
+if __name__ == "__main__":
+	readHighScore():
+	thread_one.start()
+	thread_two.start()
