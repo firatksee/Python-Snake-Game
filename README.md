@@ -1,2 +1,2 @@
-# Python-Games
-Simple Python games running on console.
+# Python-Snake-Game
+Simple snake game running on console made with Python.
