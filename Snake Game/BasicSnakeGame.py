@@ -160,11 +160,11 @@ def gamePlay():
 		print("High Score: {}".format(highScore))
 
 
-
-thread_one = threading.Thread(target = controller)
-thread_two = threading.Thread(target = gamePlay)
-
 if __name__ == "__main__":
 	readHighScore()
+	
+	thread_one = threading.Thread(target = controller)
+	thread_two = threading.Thread(target = gamePlay)
+
 	thread_one.start()
 	thread_two.start()
