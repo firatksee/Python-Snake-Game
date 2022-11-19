@@ -165,6 +165,6 @@ thread_one = threading.Thread(target = controller)
 thread_two = threading.Thread(target = gamePlay)
 
 if __name__ == "__main__":
-	readHighScore():
+	readHighScore()
 	thread_one.start()
 	thread_two.start()
